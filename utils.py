@@ -1,3 +1,4 @@
+
 def bubblesort(list):
 # Swap the elements to arrange in order
    for iter_num in range(len(list)-1,0,-1):
@@ -69,3 +70,6 @@ def selection_sort(input_list):
             min_idx = j
 # Swap the minimum value with the compared value
    input_list[idx], input_list[min_idx] = input_list[min_idx], input_list[idx]
+
+
+
