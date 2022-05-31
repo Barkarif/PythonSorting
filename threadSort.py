@@ -1,12 +1,14 @@
 import threading 
+import time
 
 class threadSort(threading.Thread):
-    def __init__(self, randArray, methodName):
+    def __init__(self, randArray, sortName):
         threading.Thread.__init__(self)
         self.randArray = randArray
-        self.methodName = methodName
+        self.sortName = sortName
 
     def run(self):
+        startTime = time.time()
         copyOfRandArray = self.randArray
-        self.methodName(copyOfRandArray)
-        print(self.methodName , copyOfRandArray)
+        sortedArray = self.sortName(copyOfRandArray)
+        print(self.sortName , sortedArray, (time.time()-startTime))
