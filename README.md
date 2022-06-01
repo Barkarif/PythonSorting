@@ -5,7 +5,6 @@ introdaction:
     Enter the array size.
     The program puts random numbers into the array.
     Result: 3 different sorts run in multiprocessing and printed the run time of each sort on the array
-    
     If Program 2 selected:
     Enter the array size.
     The program puts random numbers into the array.
