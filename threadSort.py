@@ -9,6 +9,6 @@ class threadSort(threading.Thread):
 
     def run(self):
         startTime = time.time()
-        copyOfRandArray = self.randArray
+        copyOfRandArray = self.randArray.copy()
         sortedArray = self.sortName(copyOfRandArray)
-        print(self.sortName , sortedArray, (time.time()-startTime))
+        print(self.sortName.__name__ , sortedArray, (time.time()-startTime))
