@@ -4,9 +4,8 @@ from threadSort import *
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import matplotlib as mp
-"""
-param data: 
-"""
+
+
 def matplotValues(sortType,randArray):
     data_normalizer = mp.colors.Normalize()
     color_map = mp.colors.LinearSegmentedColormap(
